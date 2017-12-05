@@ -1,0 +1,7 @@
+#N canvas 0 23 450 300 10;
+#X obj 142 90 r sampleinput;
+#X obj 145 142 osc~;
+#X obj 141 186 dac~;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 1 0 2 1;
