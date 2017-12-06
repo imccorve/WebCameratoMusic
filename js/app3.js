@@ -44,13 +44,24 @@ function getFrame() {
 
 }
 
+
 function getSwatches() {
 
 	let colorThief = new ColorThief();
 	var colorArr = colorThief.getPalette($img, 5);
+	var r,g,b,avg;
+	var colorSum = 0;
+
+
 	for (var i = 0; i < Math.min(5, colorArr.length); i++) {
 		document.querySelector('#swatch'+i).style.backgroundColor = "rgb("+colorArr[i][0]+","+colorArr[i][1]+","+colorArr[i][2]+")";
 		Pd.send('sampleinput', [parseFloat(colorArr[i][0])]);
-
+		r = colorArr[i][0];
+		g = colorArr[i][1];
+		b = colorArr[i][2];
+		avg = Math.floor((r+g+b)/3);
+		colorSum += avg;
 	}
+	var brightness = Math.floor(colorSum / 5);
+	//console.log(brightness);
 }
