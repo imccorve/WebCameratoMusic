@@ -1,0 +1,8 @@
+#N canvas 345 321 450 300 10;
+#X obj 195 111 metro 1000;
+#X obj 213 169 counter;
+#X floatatom 222 214 5 0 0 0 - - -, f 5;
+#X obj 187 78 loadbang;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 3 0 0 0;
