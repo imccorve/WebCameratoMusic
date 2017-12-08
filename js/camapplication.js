@@ -1,6 +1,6 @@
 let $button, $img, imageCapture, mediaStreamTrack, $video;
 var patch
-$.get('patches/testing/errorcheck.pd', function(mainStr) {
+$.get('patches/testing/errocheck.pd', function(mainStr) {
 	// Loading the patch
 	patch = Pd.loadPatch(mainStr)
 	Pd.start()
@@ -71,7 +71,6 @@ function getSwatches() {
 
 		//Pd.send('color' + i, [parseFloat(colorArr[i][0])])
 
-		console.log(colorArr[i][0]);
 		//Pd.send('g' + i, [parseFloat(colorArr[i][1])]);
 		//Pd.send('b' + i, [parseFloat(colorArr[i][2])]);
 
@@ -102,7 +101,5 @@ function getSwatches() {
 	Pd.send('bluefive',[parseFloat(colorArr[4][2])]);
 
 	var brightness = Math.floor(colorSum / 5);
-	Pd.send('brightness',[parseFloat(brightness)]);
-
 	//console.log(brightness);
 }
