@@ -2,9 +2,9 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title></title>
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width">
+		<title> Colors to Sounds! </title>
+		<meta name="description" content="A web application that converts colors to sounds.">
+		<!-- <meta name="viewport" content="width=device-width"> -->
 		<style>
 		#testImage {
 			display:none;
@@ -22,12 +22,19 @@
 			float: left;
 			margin-right: 3px;
 		}
+		.vid_class {
+			height: 550px;
+			-webkit-box-pack: center;
+			justify-content: center;
+		}
 		</style>
 	</head>
 	<body>
 
 		<img id="testImage">
-		<video id="testVideo" autoplay></video>
+		<h3 align="center">Colors to Sound</h3>
+		<!-- <video id="testVideo" autoplay align="center"></video> -->
+		<video id="testVideo" autoplay align="center" class="vid_class"></video>
 
 		<div id="swatches">
 			<div id="swatch0" class="swatch"></div>
