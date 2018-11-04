@@ -8,7 +8,7 @@ Here is a link to try it out for yourself:
 
 
 https://imccorve.github.io/WebCameratoMusic/
-Currently runs both on Mozilla and Chrome.
+Currently only runs on the Google Chrome browser.
 
 ----------
 
